@@ -30,9 +30,9 @@ body {
 
 .header b,
 .header strong {
-margin: 0;
-display: block;
-color: #39930d;
+    margin: 0;
+    display: block;
+    color: #39930d;
 
 }
 
@@ -119,9 +119,9 @@ color: #343434;
 .footer {
     margin: 0 -15px;
     padding: 14px 15px;
-        font-size: 14px;
-        color: #fff;
-        background-color: #39930d;
+    font-size: 14px;
+    color: #fff;
+    background-color: #39930d;
         
 
 }
