@@ -1,125 +1,174 @@
+html {
+    font-size: 1px;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #8dc63f;
-    cursor: url(cursorr.cur), pointer;
-}
+    cursor: url(cursor\ \(1\).cur), pointer;
 
+}
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 15px;
-    max-width: 960px;
+    padding: 0 15rem;
+    max-width: 960rem;
     background-color: #fff;
     box-sizing: border-box;
-
 }
-.header{
-    justify-content: space-between;
+.header {
+    flex-wrap: wrap;
+    padding: 25rem 0;
     display: flex;
-    padding: 25px 0;
-    
+    row-gap: 20rem;
+    justify-content: center;
 }
+
 .header p,
-.contacts a{
-    margin: 0; 
-    font-size: 22px;
+.contacts a {
+    margin: 0;
+    font-size: 22rem;
     color: #39930d;
     text-decoration: none;
+    text-align: center;
 }
 
 .header b,
 .header strong {
     display: block;
-    font-size: 44px;
+    font-size: 44rem;
     color: #39930d;
-
 }
 
 .header i {
     display: block;
-    font-size: 14px;
+    font-size: 14rem;
     color: #5a5a5a;
 }
-.logo{
+.logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10rem;
 }
-
-.logo img{
-    margin-left: 35px;
+.logo img {
+    margin: 0 35rem;
     transition: all 1s ease;
-    cursor: url(cursor.cur), pointer;
-}
-.logo img:hover{
-    padding-left: 200px;
-}
-.contacts a{
-    display: block;
-    margin-bottom: 10px;
 }
 
-.contacts i{
-    text-align: right;
+
+.contacts i {
+    text-align: center;
 }
+.contacts a {
+    display: block;
+    margin-bottom: 10rem;
+
+}
+
 .image {
     width: 100%;
+    min-height: 200rem;
+    object-fit: cover;
+    object-position: 70%;
 }
-.main{
-    justify-content: space-between;
+.main {
+    flex-wrap: wrap;
+    padding-bottom: 30rem;
     display: flex;
-    padding-bottom: 30px;
-    
+    justify-content: space-between;
 }
-.content{
-    
-    max-width: 600px;
-}
-.content p {
-    font-size: 14px;
-    line-height: 21px;
-    color: #343434;
-}
-.content h1{
-    font-size: 24px;
+
+.content h1 {
+    font-size: 24rem;
     color: #39930d;
 }
-.menu{
-    width: 300px;
+.content p {
+    font-size: 14rem;
+    line-height: 21rem;
+    color: #343434;
 }
-.menu ul{
-    list-style: none;
-    padding-left: 0px;
-} 
+.menu {
+    flex: 0 0 100%;
+    width: 300rem;
+    cursor: url(cursor.cur), pointer;
+}
 
+.menu ul {
+    padding-left: 0;
+    list-style: none;
+}
 .menu p {
-    padding: 11px 20px;
-    font-size: 18px;
-    background-color: #39930d;
+    padding: 11rem 20rem;
+    font-size:18rem;
     color: #fff;
+    background-color: #39930d;
 }
 .menu a {
     display: block;
-    padding: 8px 20px;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
+    padding: 8rem 20rem;
+    font-size: 14rem;
+    line-height: 14rem;
     color: #39930d;
-    transition: all 0.5s ease;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
 }
-.menu a:hover{
-    padding-left: 40px;
-    text-decoration: none;
+.menu a:hover {
+    padding-left: 40rem;
     color: #fff;
     font-style: italic;
-    background-color: #343434;
+    background-color:#343434; 
+    text-decoration: none;
 }
+
 .footer {
-    margin: 0 -15px;
-    padding: 14px 15px;
-    font-size: 14px;
+    padding: 14rem 15rem;
+    margin: 0 -15rem;
+    font-size: 14rem;
     color: #fff;
     background-color: #39930d;
-        
+}
+@media screen and (min-width: 425px ){
+    .header p{
+        text-align: left;
+    }
+}
+@media screen and (min-width: 626px ) {
+    .header {
+        justify-content: space-between;
+    }
+    .contacts i {
+        text-align: right;
+    }
+}
 
+@media screen and (min-width: 740px ) {
+    .main {
+        flex-wrap: nowrap;
+    }
+    .menu {
+        flex: 0 0 300rem;
+        width: 300rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 300rem;
+}
+}
+
+@media screen and (min-width: 935px ) {
+    .logo img:hover {
+        padding-left: 200rem;
+    }
+}
+
+@media screen and (min-width: 1440px ) {
+    html {
+        font-size: 1.4px;
+    }
+}
+@media screen and (min-width: 1440px ) {
+    .logo img {
+        width: 7vw;
+    }
 }
